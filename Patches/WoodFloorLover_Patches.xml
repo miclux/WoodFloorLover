@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs[DesignatorDropdownGroupDef]</xpath>
+    <value>
+          <DesignatorDropdownGroupDef>
+            <defName>Floor_Plank_Wood</defName>
+           <label>wood floor</label>
+          </DesignatorDropdownGroupDef>
+    </value>
+</Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/TerrainDef[defName="WoodPlankFloor"]</xpath>
+    <value>
+       <designatorDropdown>Floor_Plank_Wood</designatorDropdown>
+    </value>
+</Operation>
+</Patch>

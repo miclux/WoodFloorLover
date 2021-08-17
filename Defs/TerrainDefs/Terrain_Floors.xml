@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <TerrainDef Name="WoodFloorLoverFloorBase" Abstract="True" ParentName="FloorBase">
+        <renderPrecedence>250</renderPrecedence>
+        <burnedDef>BurnedWoodPlankFloor</burnedDef>
+        <statBases>
+            <WorkToBuild>85</WorkToBuild>
+            <Flammability>0.22</Flammability>
+        </statBases>
+        <statBases>
+			<Beauty>3</Beauty>
+			<Cleanliness>0.5</Cleanliness>
+		</statBases>
+        <costList>
+            <WoodLog>3</WoodLog>
+        </costList>
+        <constructEffect>ConstructWood</constructEffect>
+        <designationHotKey>Misc9</designationHotKey>
+        <designatorDropdown>Floor_Plank_Wood</designatorDropdown>
+    </TerrainDef> 
+    
+   <TerrainDef Name="NormalFloorBase" Abstract="True" ParentName="WoodFloorLoverFloorBase">
+    <color>(108,78,55)</color>
+  </TerrainDef>
+
+    <TerrainDef Name="DarkFloorBase" Abstract="True" ParentName="WoodFloorLoverFloorBase">
+        <color>(80,55,35)</color>
+    </TerrainDef>
+
+    <TerrainDef Name="LightFloorBase" Abstract="True" ParentName="WoodFloorLoverFloorBase">
+        <color>(138,98,67)</color>
+    </TerrainDef>
+
+    <TerrainDef ParentName="NormalFloorBase">
+        <defName>WoodPlankFloorHorizontal</defName>
+        <label>wood floor horizontal</label>
+        <description>Wood plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
+        <texturePath>Terrain/Surfaces/WoodPlankFloorHorizontal</texturePath>
+    </TerrainDef>
+
+    <TerrainDef ParentName="DarkFloorBase">
+        <defName>DarkWoodPlankFloorHorizontal</defName>
+        <label>dark wood floor horizontal</label>
+        <description>Wood plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
+        <texturePath>Terrain/Surfaces/WoodPlankFloorHorizontal</texturePath>
+    </TerrainDef>
+
+    <TerrainDef ParentName="LightFloorBase">
+        <defName>LightWoodPlankFloorHorizontal</defName>
+        <label>Light wood floor horizontal</label>
+        <description>Wood plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
+        <texturePath>Terrain/Surfaces/WoodPlankFloorHorizontal</texturePath>
+    </TerrainDef>
+
+  <TerrainDef ParentName="NormalFloorBase">
+    <defName>FineWoodPlankFloorHorizontal</defName>
+    <label>fine wood floor horizontal</label>
+    <description>Wood plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
+    <texturePath>Terrain/Surfaces/FineWoodPlankFloorHorizontal</texturePath>
+  </TerrainDef>
+
+  <TerrainDef ParentName="DarkFloorBase">
+    <defName>DarkFineWoodPlankFloorHorizontal</defName>
+    <label>dark fine wood floor horizontal</label>
+    <description>Wood plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
+    <texturePath>Terrain/Surfaces/FineWoodPlankFloorHorizontal</texturePath>
+  </TerrainDef>
+
+  <TerrainDef ParentName="LightFloorBase">
+    <defName>LightFineWoodPlankFloorHorizontal</defName>
+    <label>light fine wood floor horizontal</label>
+    <description>Wood plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
+    <texturePath>Terrain/Surfaces/FineWoodPlankFloorHorizontal</texturePath>
+  </TerrainDef>
+
+   <TerrainDef ParentName="NormalFloorBase">
+    <defName>FineWoodPlankFloor</defName>
+    <label>fine wood floor</label>
+    <description>Wood plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
+    <texturePath>Terrain/Surfaces/FineWoodPlankFloor</texturePath>
+  </TerrainDef>
+
+  <TerrainDef ParentName="DarkFloorBase">
+    <defName>DarkFineWoodPlankFloor</defName>
+    <label>dark fine wood floor</label>
+    <description>Wood plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
+    <texturePath>Terrain/Surfaces/FineWoodPlankFloor</texturePath>
+  </TerrainDef>
+
+  <TerrainDef ParentName="LightFloorBase">
+    <defName>LightFineWoodPlankFloor</defName>
+    <label>light fine wood floor</label>
+    <description>Wood plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
+    <texturePath>Terrain/Surfaces/FineWoodPlankFloor</texturePath>
+  </TerrainDef>
+
+</Defs>
